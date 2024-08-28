@@ -65,8 +65,10 @@ class DefaultFirebaseOptions {
     projectId: 'gencheminkaist',
     databaseURL: 'https://gencheminkaist.firebaseio.com',
     storageBucket: 'gencheminkaist.appspot.com',
-    androidClientId: '723715612492-de8id8mgmjoin2goevf8cgef98mlukeo.apps.googleusercontent.com',
-    iosClientId: '723715612492-k7uslep33adlhkojneaae77vhq6u6n9j.apps.googleusercontent.com',
+    androidClientId:
+        '723715612492-de8id8mgmjoin2goevf8cgef98mlukeo.apps.googleusercontent.com',
+    iosClientId:
+        '723715612492-k7uslep33adlhkojneaae77vhq6u6n9j.apps.googleusercontent.com',
     iosBundleId: 'me.blog.ghwhsbsb123.gencheminkaist',
   );
 }
