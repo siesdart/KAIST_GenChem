@@ -1,4 +1,5 @@
 # KAIST GenChem
+[![Android](https://img.shields.io/endpoint?color=green&logo=google-play&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dme.blog.ghwhsbsb123.gencheminkaist%26gl%3Dkr%26hl%3Dko%26l%3DAndroid%26m%3D%24version)](https://play.google.com/store/apps/details?id=me.blog.ghwhsbsb123.gencheminkaist)
 [![Build](https://img.shields.io/github/actions/workflow/status/siesdart/KAIST_GenChem/build.yml)](https://github.com/siesdart/KAIST_GenChem/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/siesdart/KAIST_GenChem?color=blue)](https://github.com/siesdart/KAIST_GenChem/blob/main/LICENSE)
 ![GitHub stars](https://img.shields.io/github/stars/siesdart/KAIST_GenChem?style=flat&label=stars&labelColor=333940&color=8957e5&logo=github)
