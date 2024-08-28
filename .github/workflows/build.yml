@@ -12,11 +12,15 @@ jobs:
     steps:
       - name: 📚 Git Checkout
         uses: actions/checkout@v4
-      - name: 🎯 Setup Dart
-        uses: dart-lang/setup-dart@v1
+      - name: 🐦 Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+          cache-key: flutter-:os:-:channel:-:version:-:arch:-:hash:-${{ hashFiles('**/pubspec.lock') }}
       - name: 📦 Install Dependencies
-        run: dart pub get
+        run: flutter pub get
       - name: ✨ Check Formatting
-        run: dart format --set-exit-if-changed .
+        run: dart format --set-exit-if-changed lib
       - name: 🕵️ Analyze
-        run: dart analyze --fatal-infos --fatal-warnings lib
+        run: flutter analyze lib
