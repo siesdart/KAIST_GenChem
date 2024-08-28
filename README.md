@@ -1,4 +1,8 @@
 # KAIST GenChem
+[![Build](https://img.shields.io/github/actions/workflow/status/siesdart/KAIST_GenChem/build.yml)](https://github.com/siesdart/KAIST_GenChem/actions/workflows/build.yml)
+[![License](https://img.shields.io/github/license/siesdart/KAIST_GenChem?color=blue)](https://github.com/siesdart/KAIST_GenChem/blob/main/LICENSE)
+![GitHub stars](https://img.shields.io/github/stars/siesdart/KAIST_GenChem?style=flat&label=stars&labelColor=333940&color=8957e5&logo=github)
+[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
 카이스트 젠켐은 그 동안 모바일에서 접속하기 불편했던 카이스트 일반화학 및 일반화학실험 웹을 보다 쉽게 사용할 수 있는 다양한 서비스를 제공합니다.
 
