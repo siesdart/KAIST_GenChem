@@ -13,9 +13,16 @@ Course _$CourseFromJson(Map<String, dynamic> json) => Course(
       syllabuses: Map<String, String>.from(json['syllabuses'] as Map),
       taContact: json['taContact'] as String,
       notice: json['notice'] as String,
-      lectureNotes: json['lectureNotes'] as String?,
-      expProcedure: json['expProcedure'] as String?,
-      practiceSchedule: json['practiceSchedule'] as String?,
+      lectureNotes: (json['lectureNotes'] as Map<String, dynamic>?)?.map(
+        (k, e) => MapEntry(k, e as String),
+      ),
+      expProcedures: (json['expProcedures'] as Map<String, dynamic>?)?.map(
+        (k, e) => MapEntry(k, e as String),
+      ),
+      practiceSchedules:
+          (json['practiceSchedules'] as Map<String, dynamic>?)?.map(
+        (k, e) => MapEntry(k, e as String),
+      ),
       examInfo: json['examInfo'] as String?,
       pastPapers: json['pastPapers'] as String?,
       labSafety: json['labSafety'] as String?,
@@ -27,9 +34,9 @@ Map<String, dynamic> _$CourseToJson(Course instance) => <String, dynamic>{
       'courseNo': instance.courseNo,
       'syllabuses': instance.syllabuses,
       'lectureNotes': instance.lectureNotes,
-      'expProcedure': instance.expProcedure,
+      'expProcedures': instance.expProcedures,
       'taContact': instance.taContact,
-      'practiceSchedule': instance.practiceSchedule,
+      'practiceSchedules': instance.practiceSchedules,
       'examInfo': instance.examInfo,
       'notice': instance.notice,
       'pastPapers': instance.pastPapers,

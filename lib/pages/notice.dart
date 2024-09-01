@@ -54,7 +54,7 @@ class NoticePage extends StatelessWidget {
             final course = context
                 .read(coursesProvider)
                 .firstWhere((course) => notice.title.contains(course.courseNo));
-            context.push('/webview/${notice.title}', extra: course.notice);
+            context.push('/webview/Notice', extra: course.notice);
           },
         ),
       ),

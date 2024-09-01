@@ -12,8 +12,8 @@ class Course {
     required this.taContact,
     required this.notice,
     this.lectureNotes,
-    this.expProcedure,
-    this.practiceSchedule,
+    this.expProcedures,
+    this.practiceSchedules,
     this.examInfo,
     this.pastPapers,
     this.labSafety,
@@ -25,10 +25,10 @@ class Course {
   final String courseTitle;
   final String courseNo;
   final Map<String, String> syllabuses;
-  final String? lectureNotes;
-  final String? expProcedure;
+  final Map<String, String>? lectureNotes;
+  final Map<String, String>? expProcedures;
   final String taContact;
-  final String? practiceSchedule;
+  final Map<String, String>? practiceSchedules;
   final String? examInfo;
   final String notice;
   final String? pastPapers;

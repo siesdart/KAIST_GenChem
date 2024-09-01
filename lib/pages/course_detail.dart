@@ -34,9 +34,7 @@ class CourseDetailPage extends StatelessWidget {
             (syllabus) => _buildTile(
               context,
               const Icon(Icons.file_open),
-              course.syllabuses.length > 1
-                  ? 'Syllabus (${syllabus.key})'
-                  : 'Syllabus',
+              syllabus.key != '_' ? 'Syllabus (${syllabus.key})' : 'Syllabus',
               syllabus.value,
             ),
           ),
@@ -47,25 +45,37 @@ class CourseDetailPage extends StatelessWidget {
             course.taContact,
           ),
           if (course.lectureNotes != null)
-            _buildTile(
-              context,
-              const Icon(Icons.slideshow),
-              'Lecture Notes',
-              course.lectureNotes!,
+            ...course.lectureNotes!.entries.map(
+              (lectureNote) => _buildTile(
+                context,
+                const Icon(Icons.slideshow),
+                lectureNote.key != '_'
+                    ? 'Lecture Notes (${lectureNote.key})'
+                    : 'Lecture Notes',
+                lectureNote.value,
+              ),
             ),
-          if (course.expProcedure != null)
-            _buildTile(
-              context,
-              const Icon(Icons.slideshow),
-              'Exp. Procedure',
-              course.expProcedure!,
+          if (course.expProcedures != null)
+            ...course.expProcedures!.entries.map(
+              (expProcedure) => _buildTile(
+                context,
+                const Icon(Icons.slideshow),
+                expProcedure.key != '_'
+                    ? 'Exp. Procedure (${expProcedure.key})'
+                    : 'Exp. Procedure',
+                expProcedure.value,
+              ),
             ),
-          if (course.practiceSchedule != null)
-            _buildTile(
-              context,
-              const Icon(Icons.calendar_today),
-              'Practice Class',
-              course.practiceSchedule!,
+          if (course.practiceSchedules != null)
+            ...course.practiceSchedules!.entries.map(
+              (practiceClass) => _buildTile(
+                context,
+                const Icon(Icons.calendar_today),
+                practiceClass.key != '_'
+                    ? 'Practice Class (${practiceClass.key})'
+                    : 'Practice Class',
+                practiceClass.value,
+              ),
             ),
           if (course.pastPapers != null)
             _buildTile(
