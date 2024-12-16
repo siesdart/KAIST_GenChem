@@ -7,7 +7,7 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
-  charset_converter: ^2.2.1
+  charset_converter: ^2.3.0
   dio: ^5.7.0
   firebase_analytics: ^11.3.6
   firebase_core: ^3.6.0
