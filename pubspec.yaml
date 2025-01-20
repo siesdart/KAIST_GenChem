@@ -21,7 +21,7 @@ dependencies:
   html: ^0.15.5
   html_to_pdf_plus: ^1.0.6
   json_annotation: ^4.9.0
-  open_filex: ^4.5.0
+  open_filex: ^4.6.0
   package_info_plus: ^8.1.1
   path_provider: ^2.1.5
   pdfrx: ^1.0.93
